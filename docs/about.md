@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Redirecting to Intuitas</title>
-    <meta http-equiv="refresh" content="0; url=https://www.intuitas.com">
-    <link rel="canonical" href="https://www.intuitas.com">
+    <title>Redirecting to Rivirhouse</title>
+    <meta http-equiv="refresh" content="0; url=https://www.rivirhouse.com">
+    <link rel="canonical" href="https://www.rivirhouse.com">
 </head>
 <body>
-    <p>Redirecting to <a href="https://www.intuitas.com">Intuitas</a>...</p>
+    <p>Redirecting to <a href="https://www.rivirhouse.com">Rivirhouse</a>...</p>
     <script>
-        window.location.href = "https://www.intuitas.com";
+        window.location.href = "https://www.rivirhouse.com";
     </script>
 </body>
 </html>

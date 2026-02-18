@@ -1,4 +1,4 @@
-# Intuitas Data Modelling Framework
+# Rivirhouse Data Modelling Framework
 [Return to home](README.md)
 
 > Updated 5/12/2025

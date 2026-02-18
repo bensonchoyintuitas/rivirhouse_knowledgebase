@@ -91,16 +91,16 @@ It is core part of [Enterprise Metadata Architecture](level_1.md#enterprise-meta
 
 <div align="center">
 
-<em>Example glossary from Intuitas' Glossary builder tool</em>
+<em>Example glossary from Rivirhouse’s Glossary builder tool</em>
 <br>
 <a href="../img/glossary.png" target="_blank">
-    <img src="../img/glossary.png"  alt="Example glossary from Intuitas' Glossary builder tool" width="75%">
+    <img src="../img/glossary.png"  alt="Example glossary from Rivirhouse’s Glossary builder tool" width="75%">
 </a>
 <br>
 
 </div>
 
-Contact us at 📧 <a href="mailto:office@intuitas.com">office@intuitas.com</a> to learn more about the tool.
+Contact us at 📧 <a href="mailto:office@rivirhouse.com">office@rivirhouse.com</a> to learn more about the tool.
 
 ### Business metrics
 ---
@@ -353,7 +353,7 @@ Unity catalog objects (catalogs, schemas, objects) are mapped to:
 
 <div align="center">
 
-<em>Illustrative example of Catalog to storage mapping in the Intuitas Demo Environment:</em>
+<em>Illustrative example of Catalog to storage mapping in the Rivirhouse Demo Environment:</em>
 <br>
 
 <a href="../img/catalog_to_storage_mapping.png">
@@ -397,13 +397,13 @@ It should be:
 <br>
 
 - Pattern 1: streaming: kafka -> landing -> databricks autoloader -> ods
-    - see repo [Bronze Landing to ODS Project](https://github.com/bensonchoyintuitas/health_lakehouse__engineering__databricks)
+    - see repo [Bronze Landing to ODS Project](https://github.com/bensonchoyrivirhouse/health_lakehouse__engineering__databricks)
 
 - Pattern 2: batch: source -> adf -> landing -> databricks autoloader merge to ods
-    - see repo [Bronze landing SQL Server to ODS Project](https://github.com/bensonchoyintuitas/health_lakehouse__engineering__databricks)
+    - see repo [Bronze landing SQL Server to ODS Project](https://github.com/bensonchoyrivirhouse/health_lakehouse__engineering__databricks)
     - adf requires azure sql and on-premise integration runtime
 
-    - see repo [External Database to ODS Project](https://github.com/bensonchoyintuitas/health_lakehouse__engineering__databricks)
+    - see repo [External Database to ODS Project](https://github.com/bensonchoyrivirhouse/health_lakehouse__engineering__databricks)
     - requires network access to source
 
 - Pattern 4: batch/streaming: source -> custom python -> deltalake -> external table
@@ -412,7 +412,7 @@ It should be:
     - requires network access to source
 
 - Pattern 6: sharepoint -> fivetran -> databricks sql warehouse (ods)
-    - see repo [fivetran](https://github.com/bensonchoyintuitas/health_lakehouse__engineering__custom)
+    - see repo [fivetran](https://github.com/bensonchoyrivirhouse/health_lakehouse__engineering__custom)
 
 Rejected patterns:
 
@@ -509,7 +509,7 @@ The following subsections offer more details about the channels depicted below.
     - Local execution and storage of queries and data
     - Use as feed visualization tools, e.g., Apache Superset
 
-- See repo [DuckDB](https://github.com/bensonchoyintuitas/health_lakehouse__engineering__custom)
+- See repo [DuckDB](https://github.com/bensonchoyrivirhouse/health_lakehouse__engineering__custom)
 
 - Limitations:
     - Unity Catalog not yet supported
@@ -921,7 +921,7 @@ Elementary is a dbt observability tool available in both Open Source and Cloud S
 
 <br>
 <br>
-<a href="https://dlintuitasweb.z8.web.core.windows.net/index.html#/report/dashboard" target="_blank">Example observability dashboard for Intuitas Engineering Domain</a>
+<a href="https://dlrivirhouseweb.z8.web.core.windows.net/index.html#/report/dashboard" target="_blank">Example observability dashboard for Rivirhouse Engineering Domain</a>
 
 </div>
 

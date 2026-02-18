@@ -57,7 +57,7 @@ These standards are opinionated and designed to ensure consistency, governance, 
 
 All lower case: `{optional:organisation_}{functional area/domain}_{subdomain}`
 
-   *e.g: intuitas_corporate*
+   *e.g: rivirhouse_corporate*
 
 <br>
 
@@ -71,22 +71,22 @@ All lower case: `{optional:organisation_}{functional area/domain}_{subdomain}`
 ### VNET
 
 - Name: `vn-{organisation_name}-{domain_name}`
-- *e.g: vn-intuitas-corporate*
+- *e.g: vn-rivirhouse-corporate*
 
 ### Resource Groups
 
 - Name: `rg-{organisation_name}-{domain_name}`
-- *e.g: rg-intuitas-corporate*
+- *e.g: rg-rivirhouse-corporate*
 
 ### Databricks workspace
 
 - Name: `ws-{organisation_name}-{domain_name}`
-- *e.g: ws-intuitas-corporate*
+- *e.g: ws-rivirhouse-corporate*
 
 ### Key vault
 
 - Name: `kv-{organisation_name}-{domain_name}`
-- *e.g: kv-intuitas-corporate*
+- *e.g: kv-rivirhouse-corporate*
 
 ### Secrets
 
@@ -95,23 +95,23 @@ All lower case: `{optional:organisation_}{functional area/domain}_{subdomain}`
 ### Entra Group Names
 
 - Name: `eg-{organisation_name}-{domain_name}`
-- *e.g: eg-intuitas-corporate*
+- *e.g: eg-rivirhouse-corporate*
 
 
 ### Azure Data Factory (ADF)
 
 - Name: `adf-{organisation_name}-{domain_name}`
-- *e.g: adf-intuitas-corporate*
+- *e.g: adf-rivirhouse-corporate*
 
 ### SQL Server
 
 - Name: `sql-{organisation_name}-{domain_name}`
-- *e.g: sql-intuitas-corporate*
+- *e.g: sql-rivirhouse-corporate*
 
 ### SQL Database
 
 - Name: `sqldb-{purpose}-{organisation_name}-{domain_name}-{optional:environment}`
-- *e.g: sqldb-metadata-intuitas-corporate*
+- *e.g: sqldb-metadata-rivirhouse-corporate*
 
 
 ### Storage
@@ -278,7 +278,7 @@ Example: The **Raw zone** contains the **ODS layer** which maps to the **ods sch
 
 Recommendations:
 
-- For managed tables (default): do nothing.  Let dbt create schemas without additional configuration. Databricks will manage storage and metadata.Objects will then be stored in the catalog storage root. *e.g: abfss://dev@dlintuitas{domain}.dfs.core.windows.net/engineering__dev_catalog/__unitystorage/catalogs/catalog-guid/tables/object-guid*
+- For managed tables (default): do nothing.  Let dbt create schemas without additional configuration. Databricks will manage storage and metadata.Objects will then be stored in the catalog storage root. *e.g: abfss://dev@dlrivirhouse{domain}.dfs.core.windows.net/engineering__dev_catalog/__unitystorage/catalogs/catalog-guid/tables/object-guid*
 - For granular control over schema-level storage locations: Pre-create schemas with LOCATION mapped to external paths or configure the catalog-level location.
 - Ensure dbt's dbt_project.yml and environment variables align with storage locations.
 
@@ -737,14 +737,14 @@ Source-specific products (when needed):
 
 ### Delta Sharing
 
-- Share names: {domain_name}__{optional:subdomain_name}__{optional:purpose}__{schema_name or description}__{object_name or description}__{share_purpose and or target_audience} *e.g: intuitas_corporate__finance__reporting__account_payments__payments*
+- Share names: {domain_name}__{optional:subdomain_name}__{optional:purpose}__{schema_name or description}__{object_name or description}__{share_purpose and or target_audience} *e.g: rivirhouse_corporate__finance__reporting__account_payments__payments*
 
 
 <br>
 
 ## Azure Data Factory
 
-- Linked service names: ls_{database_name}(if not in database_name:{_organisation_name}_{domain_name}) *e.g: ls_financedb_intuitas_corporate*
+- Linked service names: ls_{database_name}(if not in database_name:{_organisation_name}_{domain_name}) *e.g: ls_financedb_rivirhouse_corporate*
 - Dataset names: ds_{database_name}_{object_name}
 - Pipeline names: pl_{description: e.g copy_{source_name}_to_{destination_name}}
 - Trigger names: tr_{pipeline_name}_{optional:start_time / frequency}
@@ -1078,10 +1078,10 @@ The following standards and conventions relate to Continuous Improvement and Con
 - Format: `{org}-{domain}-{purpose}-{optional:descriptor}`
 
    Examples:
-   - intuitas-corporate-dbt
-   - intuitas-corporate-ingestion-framework  
-   - intuitas-corporate-cicd-templates
-   - intuitas-corporate-infrastructure
+   - rivirhouse-corporate-dbt
+   - rivirhouse-corporate-ingestion-framework  
+   - rivirhouse-corporate-cicd-templates
+   - rivirhouse-corporate-infrastructure
 
 ### Branch naming
 
@@ -1143,10 +1143,10 @@ Databricks asset bundles are encouraged for all Databricks projects.
       environment: ${bundle.target}
       project: health-lakehouse
       dab: health_lakehouse__engineering__databricks
-      owning_domain: intuitas_engineering
-      owner: engineering-admin@intuitas.com
-      manager: engineering-engineer@intuitas.com
-      managing_domain: intuitas_engineering
+      owning_domain: rivirhouse_engineering
+      owner: engineering-admin@rivirhouse.com
+      manager: engineering-engineer@rivirhouse.com
+      managing_domain: rivirhouse_engineering
    ```
 
 - Resources:
@@ -1156,7 +1156,7 @@ Databricks asset bundles are encouraged for all Databricks projects.
       - workflows
 
 - Databricks.yml
-   - For both dev and prod: `root_path: /Workspace/Users/engineering-engineer@intuitas.com/.bundle/${bundle.name}/${bundle.target}`
+   - For both dev and prod: `root_path: /Workspace/Users/engineering-engineer@rivirhouse.com/.bundle/${bundle.name}/${bundle.target}`
 
 Example databricks.yml
 ```yml
@@ -1181,17 +1181,17 @@ targets:
     default: true
     workspace:
       host: https://------.15.azuredatabricks.net
-      root_path: /Workspace/Users/engineering-engineer@intuitas.com/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Workspace/Users/engineering-engineer@rivirhouse.com/.bundle/${bundle.name}/${bundle.target}
   prod:
     mode: production
     workspace:
       host: https://------.15.azuredatabricks.net
-      root_path: /Workspace/Users/engineering-engineer@intuitas.com/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Workspace/Users/engineering-engineer@rivirhouse.com/.bundle/${bundle.name}/${bundle.target}
     permissions:
-      - user_name: engineering-engineer@intuitas.com
+      - user_name: engineering-engineer@rivirhouse.com
         level: CAN_MANAGE
     run_as:
-      user_name: engineering-engineer@intuitas.com
+      user_name: engineering-engineer@rivirhouse.com
 ```
 <br>
 
@@ -1251,13 +1251,13 @@ Recommended areas to align to organisational governance and cyber requirements:
 
 *Examples*:
 
-   - *GRP-INTUITAS-CLIN-DBX-WS-Analytics-ADMIN-PRD*
-   - *GRP-INTUITAS-CLIN-UC-UC-CAT-Claims-OWNER-PRD*
-   - *GRP-INTUITAS-CLIN-UC-UC-SCH-Claims.Curated-READER-UAT*
-   - *GRP-INTUITAS-FIN-PBI-PBI-WS-ExecDash-VIEWER-PRD*
-   - *GRP-INTUITAS-ENT-KVA-KVA-Keys-CUSTODIAN-PRD*
-   - *GRP-INTUITAS-CLIN-DLK-DLK-PATH-/curated/claims/READER-PRD-AUE*
-   - *GRP-INTUITAS-CLIN-DBX-WS-PartnerLake-READER-PRD-EXT-ACME*
+   - *GRP-RIVIRHOUSE-CLIN-DBX-WS-Analytics-ADMIN-PRD*
+   - *GRP-RIVIRHOUSE-CLIN-UC-UC-CAT-Claims-OWNER-PRD*
+   - *GRP-RIVIRHOUSE-CLIN-UC-UC-SCH-Claims.Curated-READER-UAT*
+   - *GRP-RIVIRHOUSE-FIN-PBI-PBI-WS-ExecDash-VIEWER-PRD*
+   - *GRP-RIVIRHOUSE-ENT-KVA-KVA-Keys-CUSTODIAN-PRD*
+   - *GRP-RIVIRHOUSE-CLIN-DLK-DLK-PATH-/curated/claims/READER-PRD-AUE*
+   - *GRP-RIVIRHOUSE-CLIN-DBX-WS-PartnerLake-READER-PRD-EXT-ACME*
 
 <br>
 <br>

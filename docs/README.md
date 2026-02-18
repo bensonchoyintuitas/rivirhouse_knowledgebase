@@ -1,6 +1,6 @@
 <div style="display: flex; align-items: center; background: transparent; border: none; margin-bottom: 20px;">
   <div style="margin-right: 20px;">
-    <a href="https://www.intuitas.com"><img src="img/intuitas.png" width="200"/></a>
+    <a href="https://www.rivirhouse.com"><img src="img/rivir-logo.png" width="200"/></a>
   </div>
   <div style="flex: 1;">
     <em>We help organisations cut through the complexity, turning data and AI into results.</em>
@@ -11,11 +11,11 @@
 # Enterprise Data Intelligence Blueprint
 
 
-This blueprint brings together resources that capture Intuitas’ approach to designing and delivering Data, AI, and Governance solutions.
+This blueprint brings together resources that capture Rivirhouse’s approach to designing and delivering Data, AI, and Governance solutions.
 
 It is a continually evolving resource, offering insights into strategic, enterprise, and solution-level practices—distilled from our R&D, common questions, and real-world experience.
 
-The ideas and patterns reflect Intuitas’ design philosophy:
+The ideas and patterns reflect Rivirhouse’s design philosophy:
 
 - grounded in large, multi-domain enterprise deployments, yet adaptable to organisations of any size or type
 - evolving, opinionated, and open to challenge
@@ -23,7 +23,7 @@ The ideas and patterns reflect Intuitas’ design philosophy:
 
 We share this blueprint with our customer and partner community to promote our vision of 'good design', help avoid pitfalls, and speed up delivery.
 
-We encourage you to explore, share and build on this information, with proper attribution to Intuitas and consideration as set out in our [license and disclaimer](#licensing-and-disclaimer).
+We encourage you to explore, share and build on this information, with proper attribution to Rivirhouse and consideration as set out in our [license and disclaimer](#licensing-and-disclaimer).
 
 <br>
 
@@ -35,7 +35,7 @@ We encourage you to explore, share and build on this information, with proper at
 ## Get help
 ---
 
-Contact us at [office@intuitas.com](mailto:office@intuitas.com) to:
+Contact us at [office@rivirhouse.com](mailto:office@rivirhouse.com) to:
 
 - Find out more, or provide feedback.
 - Access our demonstration environment or any of the tools and technologies presented
@@ -187,16 +187,16 @@ Recommended starting point by role:
 ## Licensing and disclaimer
 ---
 
-**Copyright:** This knowledgebase and associated content are the original works of © Intuitas PTY LTD, 2025.  All rights reserved. Any referenced or third-party materials remain the property of their respective copyright holders. Every effort has been made to accurately reference and attribute existing content, and no claim of ownership is made over such materials.
+**Copyright:** This knowledgebase and associated content are the original works of © Rivirhouse PTY LTD, 2025.  All rights reserved. Any referenced or third-party materials remain the property of their respective copyright holders. Every effort has been made to accurately reference and attribute existing content, and no claim of ownership is made over such materials.
 
-**License:** Free use, reproduction, and adaptation permitted with prior consent and appropriate attribution to Intuitas PTY LTD. Referenced third-party content is subject to the copyright terms of their respective owners. 
+**License:** Free use, reproduction, and adaptation permitted with prior consent and appropriate attribution to Rivirhouse PTY LTD. Referenced third-party content is subject to the copyright terms of their respective owners. 
 
 **Disclaimer:** 
 
 - Content is provided for general information only
 - The information provided is general in nature and may not cover all scenarios or workloads. It does not constitute professional advice and should not be relied on as a substitute for advice tailored to your circumstances. 
 - The information provided reflects the product landscape and  functionality available in general release at the time of publishing. While every effort is made to maintain accuracy and update information as features evolve, the timeliness of these updates cannot be guaranteed.
-- No liability is accepted by Intuitas PTY LTD for errors or omissions. 
+- No liability is accepted by Rivirhouse PTY LTD for errors or omissions. 
 - Readers are encouraged to independently validate all claims and undertake benchmark against their own use cases and projected workloads.
 
 <br>
@@ -210,10 +210,10 @@ Recommended starting point by role:
 <div align="center">
 
 <br>
-<a href="https://www.intuitas.com"><img src="img/intuitas.png" width="200"/></a>
+<a href="https://www.rivirhouse.com"><img src="img/rivir-logo.png" width="200"/></a>
 <br>
 
-📧 <a href="mailto:office@intuitas.com">office@intuitas.com</a>
+📧 <a href="mailto:office@rivirhouse.com">office@rivirhouse.com</a>
 
 
 </div>

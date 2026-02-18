@@ -1,4 +1,4 @@
-# Intuitas Data Modelling Standards and Conventions
+# Rivirhouse Data Modelling Standards and Conventions
 
 [Return to home](README.md)
 

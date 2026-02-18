@@ -90,10 +90,10 @@ A subdomain is a lower-level domain within a parent domain that groups data and 
 
 <div align="center">
 
-<em>Example of authoring domains using Intuitas' Domain builder tool</em>
+<em>Example of authoring domains using Rivirhouse’s Domain builder tool</em>
 <br>
 <a href="../img/domains.png" target="_blank">
-    <img src="../img/domains.png"  alt="xample domains from Intuitas' Domain builder tool" width="75%">
+    <img src="../img/domains.png"  alt="Example domains from Rivirhouse’s Domain builder tool" width="75%">
 </a>
 <br>
 </div>
@@ -362,11 +362,11 @@ Metadata is essential for effective data governance, providing necessary context
 
 <div align="center">
 
-<em>Modelling Domains, Glossaries and Models in Intuitas' snappy tool</em>
+<em>Modelling Domains, Glossaries and Models in Rivirhouse’s snappy tool</em>
 
 <br>
 <a href="../img/snappy.png" target="_blank">
-    <img src="../img/snappy.png"  alt="Intuitas' snappy tool" width="100%">
+    <img src="../img/snappy.png"  alt="Rivirhouse’s snappy tool" width="100%">
 </a>
 <br>
 <br>
@@ -572,7 +572,7 @@ Recommendations here align with the following Domain topology:
 - System tables provide granular visibility of all activity within Databricks.
 - System tables only provide DBU based billing insights, access to Azure Costs may require alternate reporting to be developed by the Azure administrator.
 - By default, only Databricks Account administrators have access to system tables such as billing. This is a highly privileged role and is not fit for sharing broadly. [Learn more](https://learn.microsoft.com/en-au/azure/databricks/admin/system-tables)
-- Workspace administrators need to be delegated access to system tables, and likely restricted to their domain / workspace via dynamic system catalog views with RLS applied based on workspace ID. (See Dynamic Billing Solution below. Available on request) - see repo [Databricks System Tools](https://github.com/bensonchoyintuitas/databricks_system_tools/)
+- Workspace administrators need to be delegated access to system tables, and likely restricted to their domain / workspace via dynamic system catalog views with RLS applied based on workspace ID. (See Dynamic Billing Solution below. Available on request) - see repo [Databricks System Tools](https://github.com/bensonchoyrivirhouse/databricks_system_tools/)
 
 <div align="center">
 

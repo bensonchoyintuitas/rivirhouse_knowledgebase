@@ -1,4 +1,4 @@
-site_name: Intuitas Data Intelligence Blueprint
+site_name: Rivirhouse Data Intelligence Blueprint
 nav:
   - Home: README.md
   - Level 0: level_0.md
@@ -10,7 +10,7 @@ nav:
 
 theme: 
   name: mkdocs
-  logo: assets/intuitas.png
+  logo: img/rivir-logo.png
   prev_next_buttons_location: none
 
 extra_css:
