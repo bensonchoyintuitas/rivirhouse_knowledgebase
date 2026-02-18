@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Standards - Intuitas Data Intelligence Blueprint</title>
+        <title>Standards - Rivirhouse Data Intelligence Blueprint</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -25,7 +25,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="..">Intuitas Data Intelligence Blueprint</a>
+                <a class="navbar-brand" href="..">Rivirhouse Data Intelligence Blueprint</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -204,7 +204,7 @@
 <h2 id="mesh">Mesh</h2>
 <h3 id="domain-names">Domain Names</h3>
 <p>All lower case: <code>{optional:organisation_}{functional area/domain}_{subdomain}</code></p>
-<p><em>e.g: intuitas_corporate</em></p>
+<p><em>e.g: rivirhouse_corporate</em></p>
 <p><br></p>
 <h2 id="platform">Platform</h2>
 <h3 id="environment">Environment</h3>
@@ -214,22 +214,22 @@
 <h3 id="vnet">VNET</h3>
 <ul>
 <li>Name: <code>vn-{organisation_name}-{domain_name}</code></li>
-<li><em>e.g: vn-intuitas-corporate</em></li>
+<li><em>e.g: vn-rivirhouse-corporate</em></li>
 </ul>
 <h3 id="resource-groups">Resource Groups</h3>
 <ul>
 <li>Name: <code>rg-{organisation_name}-{domain_name}</code></li>
-<li><em>e.g: rg-intuitas-corporate</em></li>
+<li><em>e.g: rg-rivirhouse-corporate</em></li>
 </ul>
 <h3 id="databricks-workspace">Databricks workspace</h3>
 <ul>
 <li>Name: <code>ws-{organisation_name}-{domain_name}</code></li>
-<li><em>e.g: ws-intuitas-corporate</em></li>
+<li><em>e.g: ws-rivirhouse-corporate</em></li>
 </ul>
 <h3 id="key-vault">Key vault</h3>
 <ul>
 <li>Name: <code>kv-{organisation_name}-{domain_name}</code></li>
-<li><em>e.g: kv-intuitas-corporate</em></li>
+<li><em>e.g: kv-rivirhouse-corporate</em></li>
 </ul>
 <h3 id="secrets">Secrets</h3>
 <ul>
@@ -238,22 +238,22 @@
 <h3 id="entra-group-names">Entra Group Names</h3>
 <ul>
 <li>Name: <code>eg-{organisation_name}-{domain_name}</code></li>
-<li><em>e.g: eg-intuitas-corporate</em></li>
+<li><em>e.g: eg-rivirhouse-corporate</em></li>
 </ul>
 <h3 id="azure-data-factory-adf">Azure Data Factory (ADF)</h3>
 <ul>
 <li>Name: <code>adf-{organisation_name}-{domain_name}</code></li>
-<li><em>e.g: adf-intuitas-corporate</em></li>
+<li><em>e.g: adf-rivirhouse-corporate</em></li>
 </ul>
 <h3 id="sql-server">SQL Server</h3>
 <ul>
 <li>Name: <code>sql-{organisation_name}-{domain_name}</code></li>
-<li><em>e.g: sql-intuitas-corporate</em></li>
+<li><em>e.g: sql-rivirhouse-corporate</em></li>
 </ul>
 <h3 id="sql-database">SQL Database</h3>
 <ul>
 <li>Name: <code>sqldb-{purpose}-{organisation_name}-{domain_name}-{optional:environment}</code></li>
-<li><em>e.g: sqldb-metadata-intuitas-corporate</em></li>
+<li><em>e.g: sqldb-metadata-rivirhouse-corporate</em></li>
 </ul>
 <h3 id="storage">Storage</h3>
 <p>The section describes naming standards and conventions for cloud storage resources.</p>
@@ -407,7 +407,7 @@
 <h4 id="schema-level-external-storage-locations">Schema level external storage locations</h4>
 <p>Recommendations:</p>
 <ul>
-<li>For managed tables (default): do nothing.  Let dbt create schemas without additional configuration. Databricks will manage storage and metadata.Objects will then be stored in the catalog storage root. <em>e.g: abfss://dev@dlintuitas{domain}.dfs.core.windows.net/engineering__dev_catalog/__unitystorage/catalogs/catalog-guid/tables/object-guid</em></li>
+<li>For managed tables (default): do nothing.  Let dbt create schemas without additional configuration. Databricks will manage storage and metadata.Objects will then be stored in the catalog storage root. <em>e.g: abfss://dev@dlrivirhouse{domain}.dfs.core.windows.net/engineering__dev_catalog/__unitystorage/catalogs/catalog-guid/tables/object-guid</em></li>
 <li>For granular control over schema-level storage locations: Pre-create schemas with LOCATION mapped to external paths or configure the catalog-level location.</li>
 <li>Ensure dbt's dbt_project.yml and environment variables align with storage locations.</li>
 </ul>
@@ -812,12 +812,12 @@ Optional warehousing construct.</p>
 </ul>
 <h3 id="delta-sharing">Delta Sharing</h3>
 <ul>
-<li>Share names: {domain_name}<strong>{optional:subdomain_name}</strong>{optional:purpose}<strong>{schema_name or description}</strong>{object_name or description}__{share_purpose and or target_audience} <em>e.g: intuitas_corporate__finance__reporting__account_payments__payments</em></li>
+<li>Share names: {domain_name}<strong>{optional:subdomain_name}</strong>{optional:purpose}<strong>{schema_name or description}</strong>{object_name or description}__{share_purpose and or target_audience} <em>e.g: rivirhouse_corporate__finance__reporting__account_payments__payments</em></li>
 </ul>
 <p><br></p>
 <h2 id="azure-data-factory">Azure Data Factory</h2>
 <ul>
-<li>Linked service names: ls_{database_name}(if not in database_name:{<em>organisation_name}</em>{domain_name}) <em>e.g: ls_financedb_intuitas_corporate</em></li>
+<li>Linked service names: ls_{database_name}(if not in database_name:{<em>organisation_name}</em>{domain_name}) <em>e.g: ls_financedb_rivirhouse_corporate</em></li>
 <li>Dataset names: ds_{database_name}_{object_name}</li>
 <li>Pipeline names: pl_{description: e.g copy_{source_name}<em>to</em>{destination_name}}</li>
 <li>Trigger names: tr_{pipeline_name}_{optional:start_time / frequency}</li>
@@ -1112,10 +1112,10 @@ seeds:
 <li>Format: <code>{org}-{domain}-{purpose}-{optional:descriptor}</code></li>
 </ul>
 <p>Examples:
-   - intuitas-corporate-dbt
-   - intuitas-corporate-ingestion-framework<br />
-   - intuitas-corporate-cicd-templates
-   - intuitas-corporate-infrastructure</p>
+   - rivirhouse-corporate-dbt
+   - rivirhouse-corporate-ingestion-framework<br />
+   - rivirhouse-corporate-cicd-templates
+   - rivirhouse-corporate-infrastructure</p>
 <h3 id="branch-naming">Branch naming</h3>
 <ul>
 <li>All lowercase with hyphens as separators</li>
@@ -1176,10 +1176,10 @@ seeds:
       environment: ${bundle.target}
       project: health-lakehouse
       dab: health_lakehouse__engineering__databricks
-      owning_domain: intuitas_engineering
-      owner: engineering-admin@intuitas.com
-      manager: engineering-engineer@intuitas.com
-      managing_domain: intuitas_engineering</code></p>
+      owning_domain: rivirhouse_engineering
+      owner: engineering-admin@rivirhouse.com
+      manager: engineering-engineer@rivirhouse.com
+      managing_domain: rivirhouse_engineering</code></p>
 <ul>
 <li>Resources:</li>
 <li>Folder level 1: <code>{meaningful sub-project name}</code></li>
@@ -1193,7 +1193,7 @@ seeds:
 <li>
 <p>Databricks.yml</p>
 </li>
-<li>For both dev and prod: <code>root_path: /Workspace/Users/engineering-engineer@intuitas.com/.bundle/${bundle.name}/${bundle.target}</code></li>
+<li>For both dev and prod: <code>root_path: /Workspace/Users/engineering-engineer@rivirhouse.com/.bundle/${bundle.name}/${bundle.target}</code></li>
 </ul>
 <p>Example databricks.yml</p>
 <pre><code class="language-yml"># This is a Databricks asset bundle definition for health_lakehouse__engineering.
@@ -1217,17 +1217,17 @@ targets:
     default: true
     workspace:
       host: https://------.15.azuredatabricks.net
-      root_path: /Workspace/Users/engineering-engineer@intuitas.com/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Workspace/Users/engineering-engineer@rivirhouse.com/.bundle/${bundle.name}/${bundle.target}
   prod:
     mode: production
     workspace:
       host: https://------.15.azuredatabricks.net
-      root_path: /Workspace/Users/engineering-engineer@intuitas.com/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Workspace/Users/engineering-engineer@rivirhouse.com/.bundle/${bundle.name}/${bundle.target}
     permissions:
-      - user_name: engineering-engineer@intuitas.com
+      - user_name: engineering-engineer@rivirhouse.com
         level: CAN_MANAGE
     run_as:
-      user_name: engineering-engineer@intuitas.com
+      user_name: engineering-engineer@rivirhouse.com
 </code></pre>
 <p><br></p>
 <h2 id="security">Security</h2>
@@ -1280,13 +1280,13 @@ targets:
 <p><br></p>
 <p><em>Examples</em>:</p>
 <ul>
-<li><em>GRP-INTUITAS-CLIN-DBX-WS-Analytics-ADMIN-PRD</em></li>
-<li><em>GRP-INTUITAS-CLIN-UC-UC-CAT-Claims-OWNER-PRD</em></li>
-<li><em>GRP-INTUITAS-CLIN-UC-UC-SCH-Claims.Curated-READER-UAT</em></li>
-<li><em>GRP-INTUITAS-FIN-PBI-PBI-WS-ExecDash-VIEWER-PRD</em></li>
-<li><em>GRP-INTUITAS-ENT-KVA-KVA-Keys-CUSTODIAN-PRD</em></li>
-<li><em>GRP-INTUITAS-CLIN-DLK-DLK-PATH-/curated/claims/READER-PRD-AUE</em></li>
-<li><em>GRP-INTUITAS-CLIN-DBX-WS-PartnerLake-READER-PRD-EXT-ACME</em></li>
+<li><em>GRP-RIVIRHOUSE-CLIN-DBX-WS-Analytics-ADMIN-PRD</em></li>
+<li><em>GRP-RIVIRHOUSE-CLIN-UC-UC-CAT-Claims-OWNER-PRD</em></li>
+<li><em>GRP-RIVIRHOUSE-CLIN-UC-UC-SCH-Claims.Curated-READER-UAT</em></li>
+<li><em>GRP-RIVIRHOUSE-FIN-PBI-PBI-WS-ExecDash-VIEWER-PRD</em></li>
+<li><em>GRP-RIVIRHOUSE-ENT-KVA-KVA-Keys-CUSTODIAN-PRD</em></li>
+<li><em>GRP-RIVIRHOUSE-CLIN-DLK-DLK-PATH-/curated/claims/READER-PRD-AUE</em></li>
+<li><em>GRP-RIVIRHOUSE-CLIN-DBX-WS-PartnerLake-READER-PRD-EXT-ACME</em></li>
 </ul>
 <p><br>
 <br></p>

@@ -1,3 +1,23 @@
 .md-header__button.md-logo img {
     height: 50px;  /* Adjust as needed */
 }
+
+/* Header (top navbar) color overrides for MkDocs built-in theme */
+:root {
+    --rivirhouse-header-bg: #848484; /* change this */
+    --rivirhouse-header-fg: #ffffff;
+}
+
+.navbar.bg-primary {
+    background-color: var(--rivirhouse-header-bg) !important;
+}
+
+.navbar.bg-primary .navbar-brand,
+.navbar.bg-primary .navbar-nav .nav-link {
+    color: var(--rivirhouse-header-fg) !important;
+}
+
+.navbar.bg-primary .navbar-nav .nav-link:hover,
+.navbar.bg-primary .navbar-nav .nav-link:focus {
+    opacity: 0.95;
+}
