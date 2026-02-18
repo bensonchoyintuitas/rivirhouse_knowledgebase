@@ -8,8 +8,12 @@
     --rivirhouse-header-fg: #ffffff;
 }
 
-.navbar.bg-primary {
-    background-color: var(--rivirhouse-header-bg) !important;
+/* MkDocs built-in theme uses Bootstrap's `.navbar` + `.bg-primary` */
+.navbar,
+.navbar.bg-primary,
+.bg-primary {
+    background: var(--rivirhouse-header-bg) !important;
+    background-image: none !important;
 }
 
 .navbar.bg-primary .navbar-brand,
